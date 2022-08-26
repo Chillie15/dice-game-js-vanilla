@@ -1,0 +1,273 @@
+p {
+  font-size: 2rem;
+  color: #000;
+  font-family: "Play", sans-serif;
+}
+
+h1 {
+  font-family: "Silkscreen", cursive;
+}
+
+img {
+  width: 80%;
+}
+
+#main-section {
+  background-color: #1fa95b;
+  border: solid 4px black;
+  border-color: black;
+}
+
+#main-section,
+#footer {
+  padding-bottom: 2.5rem;
+}
+
+/* Header */
+
+.navbar {
+  border-top: solid 4px black;
+  border-left: solid 4px black;
+  border-right: solid 4px black;
+}
+
+.navbar-nav {
+  margin-right: auto;
+  margin-left: auto;
+  gap: 1.875rem;
+}
+
+.nav-link {
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+/* Main */
+
+#main-section h1 {
+  margin: 30px;
+  text-shadow: 15px 0 #000;
+  font-size: 8rem;
+  color: #fdc62e;
+}
+
+.container {
+  text-align: center;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+}
+
+/* Button */
+
+.btn-shake {
+  background-color: #fdc62e;
+  border: solid 4px black;
+  padding: 0.75rem 1.5rem;
+  font-family: "Silkscreen", cursive;
+  font-size: 1.125rem;
+  margin-top: 2.5rem;
+}
+
+.btn-shake:hover {
+  background-color: #fdc62e;
+  position: relative;
+  bottom: 5px;
+}
+
+/* How To Play */
+
+.title-how {
+  background-color: #a49ef8;
+  border-left: 4px solid #000;
+  border-right: 4px solid #000;
+  border-bottom: 4px solid #000;
+  padding: 6.25rem;
+}
+
+.description-how {
+  border-right: 4px solid #000;
+  border-bottom: 4px solid #000;
+  padding: 6.25rem;
+}
+
+.description-how-mobile {
+  display: none;
+}
+
+#how-to h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+#how-to p {
+  font-family: "Play", sans-serif;
+  font-size: 1.125rem;
+  margin: 1px;
+}
+
+/* About */
+
+.title-about {
+  background-color: #b1ebd3;
+  border-right: 4px solid #000;
+  border-bottom: 4px solid #000;
+  padding: 6.25rem;
+}
+
+.description-about {
+  border-left: 4px solid #000;
+  border-right: 4px solid #000;
+  border-bottom: 4px solid #000;
+  padding: 6.25rem;
+}
+
+.description-about-mobile {
+  display: none;
+}
+
+#about h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+#about p {
+  font-family: "Play", sans-serif;
+  font-size: 1.125rem;
+  margin-bottom: 8px;
+}
+
+#about a {
+  color: #000;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+#about a:hover {
+  color: #0a58ca;
+}
+
+/* Footer */
+
+#footer {
+  padding-top: 2.5rem;
+  border-left: solid 4px black;
+  border-right: solid 4px black;
+  border-bottom: solid 4px black;
+  text-align: center;
+}
+
+#footer p {
+  font-family: "Silkscreen", cursive;
+  font-size: 1rem;
+  color: #8f8f8f;
+  margin-top: 1rem;
+}
+
+#footer li {
+  display: inline-block;
+}
+
+#footer a {
+  list-style-type: none;
+  margin: 0 10px;
+  font-size: 1rem;
+  color: #121211;
+}
+
+i:hover {
+  color: #1fa95b;
+}
+
+@media screen and (max-width: 900px) {
+  /* Main Section */
+
+  #main-section h1 {
+    font-size: 6rem;
+    text-shadow: 12px 0 #000;
+  }
+
+  .btn-shake {
+    margin-top: 3rem;
+  }
+
+  /* How To Play Section */
+
+  .description-how {
+    display: none;
+  }
+
+  .title-how {
+    text-align: center;
+    border-right: solid 4px black;
+  }
+
+  .description-how-mobile {
+    display: block;
+  }
+
+  #how-to h1 {
+    margin-bottom: 1.5rem;
+  }
+
+  /* About */
+
+  .description-about {
+    display: none;
+  }
+
+  .title-about {
+    text-align: center;
+    border-left: solid 4px black;
+    border-right: solid 4px black;
+  }
+
+  .description-about-mobile {
+    display: block;
+  }
+
+  #about h1 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* Main Section */
+
+  #main-section h1 {
+    font-size: 4rem;
+    text-shadow: 8px 0 #000;
+  }
+
+  #main-section p {
+    font-size: 1.5rem;
+  }
+
+  .btn-shake {
+    margin-top: 4.375rem;
+    font-size: 1rem;
+  }
+
+  /* How to Play Section */
+
+  .title-how,
+  .title-about {
+    padding: 30px;
+  }
+
+  #how-to h1,
+  #about h1 {
+    font-size: 30px;
+  }
+
+  #how-to p,
+  #about p {
+    font-size: 0.875rem;
+  }
+}
